@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* Header */
+header {
+    background: black;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b026ff;
+}
+
+/* Hamburger */
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    color: #b026ff;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+/* Navigation */
+nav {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1a;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-bottom: 1px solid #333;
+}
+
+nav a:hover {
+    background: #b026ff;
+}
+
+/* Button style for nav links */
+.nav-button {
+    background: #b026ff;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin: 6px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background: #8c1fcc;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav a {
+        border: none;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Gallery</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <a class="nav-button" href="../index.html">Home</a>
+        <a class="nav-button" href="../gallery.html/gallery.html">Gallery</a>
+        <a class="nav-button" href="../about.html/about.html">About</a>
+        <a class="nav-button" href="../contact.html/contact.html">Contact</a>
+    </nav>
+</header>
+
+<h2>Gallery</h2>
+
+<section class="gallery">
+    <!-- 16 Images -->
+    <img src="Gabe Newell/Gabe Newell Steam Discount - Emboss Filter.jpg" class="Emboss" width="400" alt="Gabe Newell Steam discount meme with Emboss Filter">
+    <img src="Gabe Newell/Gabe Newell Steam Discount - Median Filter.jpg" class="Median" width="400" alt="Gabe Newell Steam discount meme with Median Filter">
+    <img src="Gabe Newell/Gabe Newell Steam Discount - Mosaic Filter.jpg" class="Mosaic" width="400" alt="Gabe Newell Steam discount meme with Mosaic Filter">
+    <img src="Gabe Newell/Gabe Newell Steam Discount - no filter.jpg" class="nofilter" width="400" alt="Gabe Newell Steam discount meme with no filter">
+    <img src="i_hate_it/i_hate_it - no filter.jpg" class="nofilter" width="400" alt="i_hate_it meme with no filter">
+    <img src="i_hate_it/i_hate_it - Pointillize.jpg" class="Pointillize" width="400" alt="i_hate_it meme with Pointillize filter">
+    <img src="i_hate_it/i_hate_it - Solarize.jpg" class="Solarize" width="400" alt="i_hate_it meme with Solarize filter">
+    <img src="i_hate_it/i_hate_it - ZigZag.jpg" class="ZigZag" width="400" alt="i_hate_it meme with ZigZag filter">
+    <img src="Just_Do_It/Just_Do_It - no filter.jpg" class="nofilter" width="400" alt="Just_Do_It meme with no filter">
+    <img src="Just_Do_It/Just_Do_It - Box blur.jpg" class="Boxblur" width="400" alt="Just_Do_It meme with Box blur filter">
+    <img src="Just_Do_It/Just_Do_It - Mezzotint.jpg" class="Mezzotint" width="400" alt="Just_Do_It meme with Mezzotint filter">
+    <img src="Just_Do_It/Just_Do_It - Oil Paint.jpg" class="OilPaint" width="400" alt="Just_Do_It meme with Oil Paint filter">
+    <img src="Memes_Combined/Memes_Combined - no filter.jpg" class="nofilter" width="400" alt="Memes_Combined meme with no filter">
+    <img src="Memes_Combined/Memes_Combined - Particles.jpg" class="Particle" width="400" alt="Memes_Combined meme with Particles filter">
+    <img src="Memes_Combined/Memes_Combined - Ripple.jpg" class="Ripple" width="400" alt="Memes_Combined meme with Ripple filter">
+    <img src="Memes_Combined/Memes_Combined - Trace Contour.jpg" class="TraceContour" width="400" alt="Memes_Combined meme with Trace Contour filter">
+    <img src="Rick/Rick no - filter - 1920px.jpg" class="nofilter" width="400" alt="Rick meme with no filter">
+    <img src="Rick/Rick - 960px.jpg" class="nofilter" width="400" alt="Rick meme with no filter">
+    <img src="Rick/Rick no - 480px.jpg" class="nofilter" width="400" alt="Rick meme with no filter">
+</section>
+
+<footer>
+    <p>© 2026 My Website</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
+
+</body>
+</html>

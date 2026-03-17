@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="../css/contact.css/contact.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Contact</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <a class="nav-button" href="../index.html">Home</a>
+        <a class="nav-button" href="../gallery.html/gallery.html">Gallery</a>
+        <a class="nav-button" href="../about.html/about.html">About</a>
+        <a class="nav-button" href="../contact.html/contact.html">Contact</a>
+    </nav>
+</header>
+
+<h2>Contact Us</h2>
+
+<p>Email: example@email.com</p>
+<p>Phone: 0400 000 000</p>
+
+<form>
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+<footer>
+    <p>© 2026 Matt's meme website - All images used for educational purposes.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
+
+</body>
+</html>

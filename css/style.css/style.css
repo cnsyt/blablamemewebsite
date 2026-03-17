@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px;
+}
+
+nav h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.intro {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+}
+
+/* Image Effects */
+.grayscale { filter: grayscale(100%); }
+.blur { filter: blur(3px); }
+.brightness { filter: brightness(150%); }
+.contrast { filter: contrast(200%); }
+.sepia { filter: sepia(100%); }
+.saturate { filter: saturate(200%); }
+.invert { filter: invert(100%); }
+.hue { filter: hue-rotate(90deg); }
+
+/* Responsive About Sections */
+.about-section {
+    padding: 20px;
+    margin: 10px;
+    background: #f4f4f4;
+}
+
+@media (min-width: 768px) {
+    .about-section {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

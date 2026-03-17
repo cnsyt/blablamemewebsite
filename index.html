@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome - Home</title>
+<link rel="stylesheet" href="css/Index.css/Index.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Home Page</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <a class="nav-button" href="index.html">Home</a>
+        <a class="nav-button" href="gallery.html/gallery.html">Gallery</a>
+        <a class="nav-button" href="about.html/about.html">About</a>
+        <a class="nav-button" href="contact.html/contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img 
+        srcset="hero images/hello-480.png 480w,
+                hero images/hello-960.png 960w,
+                hero images/hello-1920.png 1920w"
+        sizes="(max-width: 600px) 480px,
+               (max-width: 1200px) 960px,
+               1920px"
+        src="hero images/hello-1920.png"
+        alt="Hero Image">
+</section>
+
+<section class="intro">
+    <h2>Welcome to My Website</h2>
+    <p>This website demonstrates the responsive design, navigation menus, and modern styling using purple and black colors.</p>
+
+    <p>External Links:</p>
+    <a href="https://jigsaw.w3.org/css-validator/" target="_blank" style="color:white; font-size: 22px;">css-validator</a><br>
+    <a href="https://www.w3schools.com" target="_blank" style="color:white; font-size: 22px;">W3Schools</a>
+</section>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+</script>
+
+</body>
+</html>
